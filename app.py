@@ -15,15 +15,15 @@ std_values = np.array([9.942487078078907, 3.69126162520489, 86.01066531555992, 0
 # Title of the app
 st.markdown("""
     <h1 style="text-align: center; font-size: 36px;">
-        Рассчитать стероид резистенстность
+        Calculate probability of steroid resistance for patient
     </h1>
 """, unsafe_allow_html=True)
 
 # Getting input from the user
-age_at_diagnosis = st.number_input('Enter Age at the Diagnosis value:', value=0.0)
-sleday = st.number_input('Enter SLEDAY-2K value:', value=0.0)
-antidsdna = st.number_input('Enter Anti-dsDNA (currently) value:', value=0.0)
-anf = st.number_input('Enter ANF (currently) value:', value=0.0)
+age_at_diagnosis = st.number_input('Enter Age at the Diagnosis value:')
+sleday = st.number_input('Enter SLEDAY-2K value:')
+antidsdna = st.number_input('Enter Anti-dsDNA (currently) value:')
+anf = st.number_input('Enter ANF (currently) value:')
 
 if anf >= 640:
 	anf = 1
