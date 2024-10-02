@@ -65,7 +65,7 @@ if st.button('Calculate!'):  # This will trigger the calculation only when click
     # Displaying the result in larger font and centered
     st.markdown(f"""
     <div style="text-align: center; font-size: 24px; font-weight: bold;">
-        The predicted probability is: {int(result_proba)}%
+        The predicted probability is: {result_proba}%
     </div>
     """, unsafe_allow_html=True)
 
