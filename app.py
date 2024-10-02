@@ -51,9 +51,9 @@ predicted_probabilities = 1 / (1 + np.exp(-linear_combination))
 # Convert predicted probabilities to predicted classes (0 or 1)
 predicted_classes = np.round(predicted_probabilities)
 
-result_proba = np.round(predicted_probabilities[0] * 100)
+result_proba = np.round(predicted_probabilities[0] )
 
-if predicted_probabilities < 0.6:
+if predicted_probabilities < 0.5:
 	result_message = 'This patient more probably do NOT have steroid resistance.'
 	color = "green"
 else:
