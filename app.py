@@ -14,7 +14,7 @@ std_values = np.array([9.942487078078907, 3.69126162520489, 86.01066531555992, 0
 
 # Title of the app
 st.markdown("""
-    <h1 style="text-align: center; font-size: 36px; color: black;">
+    <h1 style="text-align: center; font-size: 36px;">
         Calculate probability of steroid resistance for patient
     </h1>
 """, unsafe_allow_html=True)
