@@ -15,7 +15,7 @@ std_values = np.array([9.942487078078907, 3.69126162520489, 86.01066531555992, 0
 # Title of the app
 st.markdown("""
     <h1 style="text-align: center; font-size: 36px;">
-        Calculate probability of steroid resistance for patient
+        Calculate the probability of steroid resistance for the patient
     </h1>
 """, unsafe_allow_html=True)
 
@@ -54,10 +54,10 @@ predicted_classes = np.round(predicted_probabilities)
 result_proba = np.round(predicted_probabilities[0],2)
 
 if predicted_probabilities < 0.5:
-	result_message = 'This patient more probably do NOT have steroid resistance.'
+	result_message = 'This patient is more likely NOT to have steroid resistance.'
 	color = "green"
 else:
-	result_message = 'This patient more probably have steroid resistance.'
+	result_message = 'This patient is more likely to have steroid resistance.'
 	color = "red"
 
 # Display button to calculate
