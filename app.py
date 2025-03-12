@@ -20,10 +20,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Getting input from the user
-age_at_diagnosis = st.number_input('Enter Age at the Diagnosis value:')
-sleday = st.number_input('Enter SLEDAY-2K value:')
-antidsdna = st.number_input('Enter Anti-dsDNA (currently) value:')
-anf = st.number_input('Enter ANF (currently) value:')
+age_at_diagnosis = st.number_input('Enter the Age at the Diagnosis value in years:')
+sleday = st.number_input('Enter the SLEDAI-2K value:')
+antidsdna = st.number_input('Enter the Anti-dsDNA currently value in IU/mL:')
+anf = st.number_input('Enter the current ANF value (only the second value in the titer; for example, if the ANF titer is 1:160, enter only 160):')
 
 if anf >= 640:
 	anf = 1
