@@ -22,7 +22,7 @@ st.markdown("""
 # Getting input from the user
 age_at_diagnosis = st.number_input('Enter the Age at the Diagnosis value in years:')
 sleday = st.number_input('Enter the SLEDAI-2K value:')
-antidsdna = st.number_input('Enter the Anti-dsDNA currently value in IU/mL:')
+antidsdna = st.number_input('Enter the current Anti-dsDNA value in IU/mL:')
 anf = st.number_input('Enter the current ANF value (only the second value in the titer; for example, if the ANF titer is 1:160, enter only 160):')
 
 if anf >= 640:
